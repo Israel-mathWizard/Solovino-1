@@ -17,7 +17,7 @@ if ($vsesion == null || $vsesion = '') {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with LeadMark landing page.">
     <meta name="author" content="Devcrud">
-    <title>Catalogo</title>
+    <title>Ado´ptar</title>
     <!-- font icons -->
     <link rel="stylesheet" href="./vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
@@ -53,7 +53,7 @@ if ($vsesion == null || $vsesion = '') {
     <!-- Page Header -->
     <header class="header">
         <div class="overlay">
-            <h1 class="title">Catalogo</h1>
+            <h1 class="title">Adopta</h1>
             <h1 class="subtitle">Adopta una mascota</h1>
         </div>  
         <div class="shape">

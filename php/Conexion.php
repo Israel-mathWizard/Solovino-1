@@ -6,3 +6,4 @@ $mysqli = new mysqli("localhost", "root", "", "solovino");
     ECHO "CONEXION EXITOSA";
 }
 */
+?>
