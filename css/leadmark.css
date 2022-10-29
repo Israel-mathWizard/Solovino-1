@@ -184,13 +184,13 @@ sup {
 }
 
 a {
-  color: #ff6e42;
+  color: #D71868;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #f53900;
+  color: #D71868;
   text-decoration: none;
 }
 
@@ -2805,8 +2805,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #d71868;
-  border-color: #d71868;
+  background-color: #D71868;
+  border-color: #D71868;
 }
 
 .btn-primary:hover {
@@ -11722,7 +11722,7 @@ textarea.form-control {
 .portfolio-section .filters a.active {
   opacity: 1;
   border-radius: 100px;
-  background: #ff6e42;
+  background: #D71868;
   color: #fff;
 }
 
@@ -11745,6 +11745,7 @@ textarea.form-control {
   left: 200%;
   width: 100%;
   height: 100%;
+  /*scrolldog*/
   background: rgba(001, 110, 66, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
