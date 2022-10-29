@@ -1,26 +1,30 @@
 <?php
-error_reporting(0);
-header('content-type: application/json; charset=utf-8');
-        include "conexion.php";
-        
-        $ejecutar = $conexion -> query($sql);
-        
-        $Nombre = $_REQUEST['Usuario'];
-        $Direccion = $_REQUEST['Direccion'];
-        $Telefono = $_REQUEST['Telefono'];
-        $Email = $_REQUEST['Email'];
-        $Password = $_REQUEST['Password'];
+//Se incluye la conexion a la base de datos
 
-        $sql = "INSERT INTO usuarios VALUES (default, '$Nombre','$Direccion','$Telefono','$Email','$Password')";
-        $data["sql"] = $sql;
-        $ejecutar = $conexion -> query($sql);
+use LDAP\Result;
 
-        if ($ejecutar) {
-			// redirecionara a pagina..
-            header("location:../Login.html"); 
-        } else {
-            $data["resultado"] = "Error";
-        }
+include_once('Conexion.php');
 
-print $_GET['callback'] . '('.json_encode($data).')';
+//Recibe los datos del formulario.
+        $Nombre = $_POST['Nombre'];
+        $Direccion = $_POST['Direccion'];
+        $Telefono = $_POST['Telefono'];
+        $Email = $_POST['Email'];
+        $Password = $_POST['Password'];
+
+//
+$conexion=mysqli_connect("localhost", "root", "", "solovino");
+$sql="INSERT INTO usuarios(Nombre, Direccion, Telefono, Email, Password)
+VALUES('$Nombre', '$Direccion', '$Telefono', '$Email', '$Password')";
+
+$Result=mysqli_query($conexion, $sql);
+
+if ($Result== true) {
+      // inicio de sesion..
+     header("location:../Login.html");
+ } else {
+       // alerta de usuario ou contraseña no valido
+      echo '<script language="javascript">alert("Error de registro");window.location.href="../Login.html"</script>';
+ }
+
 ?>

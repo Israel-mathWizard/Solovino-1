@@ -7,9 +7,9 @@
     $conexion=mysqli_connect("localhost", "root", "", "solovino");
     $consulta="SELECT * FROM usuarios WHERE Email='$Email' and Password ='$Password'";
  
-    $resultado=mysqli_query($conexion, $consulta);
+    $Result=mysqli_query($conexion, $consulta);
 
-    $filas=mysqli_num_rows($resultado);
+    $filas=mysqli_num_rows($Result);
 
         if ($filas>0) {
              // inicio de sesion..
@@ -22,7 +22,7 @@
              echo '<script language="javascript">alert("Error de autentificacion");window.location.href="../Login.html"</script>';
         }
 
-    mysqli_free_result($resultado);
+    mysqli_free_result($Result);
     mysqli_close($conexion);
 
 ?>	                    
