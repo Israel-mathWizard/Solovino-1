@@ -1,3 +1,7 @@
+/*
+Esta funcion controla los botones iniciar, registar del inicio de sesion,
+Para hacer el cambio de formulario
+*/
 $(function () {
   $(".btn").click(function () {
     $(".form-signin").toggleClass("form-signin-left");

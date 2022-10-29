@@ -1,3 +1,15 @@
+<?php
+/*mantener la sesion activa nota:pegar en cada pagina que este dentro del inicio de sesion*/
+session_start();
+error_reporting(0);
+$_SESSION['Email'];
+$vsesion = $_SESSION['Email'];
+if ($vsesion == null || $vsesion = '') {
+	/*alerta de no inicio de sesion*/
+	echo '<script language="javascript">alert("Debes iniciar sesion");window.location.href="Login.html"</script>';
+	
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -31,7 +43,7 @@
                         <a href="Catalogo.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Catalogo</a>
                     </li>
                     <li class="nav-item">
-                        <a href="Login.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Sesion</a>
+                        <a href="./php/Destruir_Sesion.php" class="ml-4 nav-link btn btn-primary btn-sm rounded">Cerrar Sesion</a>
                     </li>
                    
                 </ul>
@@ -43,7 +55,12 @@
         <div class="overlay">
             <h1 class="title">Catalogo</h1>
             <h1 class="subtitle">Adopta una mascota</h1>
-        </div>
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div> </div>
     </header>
     <!-- End Of Page Header -->
     <!-- Portfolio Section -->
@@ -68,7 +85,7 @@
                             <div class="text-holder">
                                 <h6 class="title">Firulais</h6>
                                 <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                <button href="./Adoptar.php" class="btn btn-primary rounded w-md mt-3">Adoptar</button>
+                                <button type="submit" class="btn btn-primary rounded w-md mt-3">Adoptar</button>
                             </div>
                         </div>   
                     </div>             
