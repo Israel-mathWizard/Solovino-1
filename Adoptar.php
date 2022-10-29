@@ -17,7 +17,7 @@ if ($vsesion == null || $vsesion = '') {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with LeadMark landing page.">
     <meta name="author" content="Devcrud">
-    <title>Ado´ptar</title>
+    <title>Adoptar</title>
     <!-- font icons -->
     <link rel="stylesheet" href="./vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
