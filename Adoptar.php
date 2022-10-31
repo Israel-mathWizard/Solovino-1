@@ -43,7 +43,7 @@ if ($vsesion == null || $vsesion = '') {
                         <a href="Catalogo.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Catalogo</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./php/Destruir_Sesion.php" class="ml-4 nav-link btn btn-primary btn-sm rounded">Cerrar Sesion</a>
+                        <a href="./php/Destruir_Sesion.php" class="ml-4 nav-link btn btn-primary btn-sm rounded">Cerrar Sesión</a>
                     </li>
                    
                 </ul>
@@ -55,12 +55,7 @@ if ($vsesion == null || $vsesion = '') {
         <div class="overlay">
             <h1 class="title">Adopta</h1>
             <h1 class="subtitle">Adopta una mascota</h1>
-        </div>  
-        <div class="shape">
-            <svg viewBox="0 0 1500 200">
-                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
-            </svg>
-        </div> </div>
+        </div>
     </header>
     <!-- End Of Page Header -->
     <!-- Portfolio Section -->
