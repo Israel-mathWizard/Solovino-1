@@ -95,7 +95,7 @@ li {
   padding-bottom: 9px;
   color: #ffffff;
   text-decoration: none;
-  border-bottom: solid 4px #1059FF;
+  border-bottom: solid 4px #DF869C;
   transition: all .25s ease;
   cursor: pointer;
 }
@@ -112,7 +112,7 @@ li {
   cursor: pointer;
   color: #ffffff;
   text-decoration: none;
-  border-bottom: solid 4px #1059FF;
+  border-bottom: solid 4px #DF869C;
   padding-bottom: 9px;
 }
 
@@ -217,7 +217,7 @@ li {
 	border: none;
 	border-radius: 20px;
   margin-bottom: 20px;
-  background: rgba(255,255,255,.2);
+  background: rgb(171, 206, 181);
 }
 
 label {
@@ -287,7 +287,7 @@ label {
 
 /* on checked */
 [type="checkbox"]:checked + label:before {
-  background: #0F4FE6; 
+  background: #DF869C; 
 }
 
 [type="checkbox"]:checked + label:after {
@@ -402,7 +402,7 @@ label {
 
 a.btn-signup:hover, a.btn-signin:hover {
     cursor: pointer; 
-    background-color: #0F4FE6;
+    background-color: #DF869C;
     transition: background-color .5s; 
 }
 
@@ -501,7 +501,7 @@ h1 {
 
 a.btn-goback:hover {
     cursor: pointer; 
-    background-color: #0F4FE6;
+    background-color: #DF869C;
     transition: all .5s; 
     color: #ffffff;
 }
